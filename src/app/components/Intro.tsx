@@ -12,7 +12,7 @@ import { MY_PHONE, whatsappCustomMessage } from '../utils/whatsapp'
 
 export function Intro() {
   return (
-    <section className="flex flex-col gap-36 pt-5 lg:pt-10 mt-10 lg:mt-20 relative after:content-[''] after:bg-[url('/assets/main-banner-code-bg.png')] after:absolute after:top-0 after:right-0 after:block after:bg-no-repeat after:w-[309px] lg:after:w-[409px] after:h-[361px] lg:after:h-[461px]">
+    <section className="flex flex-col gap-16 lg:gap-36 pt-5 lg:pt-10 mt-10 lg:mt-20 relative after:content-[''] after:bg-[url('/assets/main-banner-code-bg.png')] after:absolute after:top-0 after:right-0 after:block after:bg-no-repeat after:w-[309px] lg:after:w-[409px] after:h-[361px] lg:after:h-[461px]">
       <div className="flex flex-col gap-7">
         <div className="lg:w-[936px]">
           <h1 className="text-xl lg:text-3xl text-gray-100 drop-shadow-md mb-4 lg:mb-7">
