@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { JetBrains_Mono, Inter } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
@@ -7,10 +7,6 @@ import { Footer } from './components/Footer'
 import './globals.css'
 
 const jetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
-const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 })
