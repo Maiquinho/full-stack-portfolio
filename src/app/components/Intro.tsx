@@ -1,12 +1,15 @@
 'use client'
 
 import Link from 'next/link'
+
 import { Button } from './Button'
 import {
   ArrowDown,
+  Briefcase,
   Envelope,
   GithubLogo,
   LinkedinLogo,
+  Megaphone,
 } from '@phosphor-icons/react'
 import { MY_PHONE, whatsappCustomMessage } from '../utils/whatsapp'
 
@@ -34,10 +37,10 @@ export function Intro() {
             )}
             target="_blank"
           >
-            <Button text="Contratar" variant="fill" type="button" />
+            <Button text="Contratar" variant="fill" type="button" icon={Megaphone} />
           </Link>
-          <Link href="/link" target="_blank">
-            <Button text="Portfólio" variant="outline" type="button" />
+          <Link href="/portfolio" target="_blank">
+            <Button text="Portfólio" variant="outline" type="button" icon={Briefcase} />
           </Link>
         </div>
       </div>
