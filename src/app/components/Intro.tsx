@@ -37,10 +37,20 @@ export function Intro() {
             )}
             target="_blank"
           >
-            <Button text="Contratar" variant="fill" type="button" icon={Megaphone} />
+            <Button
+              text="Contratar"
+              variant="fill"
+              type="button"
+              icon={Megaphone}
+            />
           </Link>
           <Link href="/portfolio" target="_blank">
-            <Button text="Portfólio" variant="outline" type="button" icon={Briefcase} />
+            <Button
+              text="Portfólio"
+              variant="outline"
+              type="button"
+              icon={Briefcase}
+            />
           </Link>
         </div>
       </div>
