@@ -73,10 +73,10 @@ export function Skills() {
         {skillsData.map((skill) => (
           <div
             key={skill.id}
-            className="flex flex-col gap-4 items-center justify-between w-min"
+            className="flex flex-col gap-4 items-center justify-between w-min panel hover:opacity-100"
           >
             <Image src={skill.image} width={87} height={87} alt="" />
-            <span className="text-gray-100 text-md ">{skill.title}</span>
+            <span className="text-gray-100 text-md">{skill.title}</span>
           </div>
         ))}
       </Flicking>
