@@ -2,6 +2,7 @@ import { Intro } from './components/Intro'
 import { Skills } from './components/Skills'
 import { Projects } from './components/Projects/'
 import { About } from './components/About'
+import { CallToAction } from './components/CallToAction'
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <About />
-
-      <section className="text-gray-200 py-2 px-10">CTA</section>
+      <CallToAction />
     </main>
   )
 }
