@@ -2,8 +2,10 @@
 
 import Image from 'next/image'
 
-import Flicking from '@egjs/react-flicking'
+import Flicking, { Panel } from '@egjs/react-flicking'
+import { Fade } from '@egjs/flicking-plugins'
 import '@egjs/react-flicking/dist/flicking.css'
+import '@egjs/flicking-plugins/dist/flicking-plugins.css'
 
 import './styles.css'
 
@@ -64,11 +66,17 @@ export function Skills() {
         <span className="text-brand">{'{desenvolvimento full-stack}'}</span>
       </h2>
 
-      <Flicking className="flex mt-14" align="prev" autoResize={true}>
+      <Flicking
+        className="flex mt-14"
+        hideBeforeInit={true}
+        align="prev"
+        autoResize={true}
+        plugins={[new Fade('panel', 1)]}
+      >
         {skillsData.map((skill) => (
           <div
             key={skill.id}
-            className="flex flex-col gap-4 items-center justify-between w-min"
+            className="flex flex-col gap-4 items-center justify-between w-min panel hover:opacity-100"
           >
             <Image src={skill.image} width={87} height={87} alt="" />
             <span className="text-gray-100 text-md ">{skill.title}</span>
