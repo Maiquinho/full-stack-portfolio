@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${jetBrainsMono.className} ${'overflow-x-hidden'}`}>
-        <div className="flex flex-col h-screen w-11/12 lg:w-[1120px] m-auto">
+        <div className="flex flex-col h-screen w-11/12 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
           <Header />
           {children}
           <Footer />
