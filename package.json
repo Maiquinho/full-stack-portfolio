@@ -10,6 +10,7 @@
     "lint:fix": "npx eslint src --ext .tsx,.ts --fix"
   },
   "dependencies": {
+    "@egjs/react-flicking": "^4.11.2",
     "@phosphor-icons/react": "^2.0.15",
     "next": "14.0.4",
     "react": "^18",
