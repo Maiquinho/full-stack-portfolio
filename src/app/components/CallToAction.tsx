@@ -1,6 +1,10 @@
 'use client'
 
+import { useEffect } from 'react'
 import Link from 'next/link'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { Button } from './Button'
 
@@ -8,8 +12,17 @@ import { WhatsappLogo, Envelope } from '@phosphor-icons/react'
 import { whatsappCustomMessage, MY_PHONE } from '../utils/whatsapp'
 
 export function CallToAction() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <section className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-40">
+    <section
+      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-40"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+    >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         <h2 className="flex-1 text-xl lg:text-cta text-gray-100">
           Vamos <span className="text-brand">{'{trabalhar}'}</span> juntos?
