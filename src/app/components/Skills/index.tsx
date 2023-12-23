@@ -1,4 +1,11 @@
+'use client'
+
 import Image from 'next/image'
+
+import Flicking from '@egjs/react-flicking'
+import '@egjs/react-flicking/dist/flicking.css'
+
+import './styles.css'
 
 interface Skill {
   id: number
@@ -38,6 +45,16 @@ export function Skills() {
       image: '/assets/skills/mariadb-logo-white.png',
       title: 'MariaDB',
     },
+    {
+      id: 7,
+      image: '/assets/skills/styled-components.png',
+      title: 'Styled Components',
+    },
+    {
+      id: 8,
+      image: '/assets/skills/tailwindcss.png',
+      title: 'TailwindCSS',
+    },
   ]
 
   return (
@@ -47,17 +64,17 @@ export function Skills() {
         <span className="text-brand">{'{desenvolvimento full-stack}'}</span>
       </h2>
 
-      <div className="flex gap-20 mt-14">
+      <Flicking className="flex mt-14" align="prev" autoResize={true}>
         {skillsData.map((skill) => (
           <div
             key={skill.id}
-            className="flex flex-col gap-4 items-center justify-between"
+            className="flex flex-col gap-4 items-center justify-between w-min"
           >
             <Image src={skill.image} width={87} height={87} alt="" />
             <span className="text-gray-100 text-md ">{skill.title}</span>
           </div>
         ))}
-      </div>
+      </Flicking>
     </section>
   )
 }
