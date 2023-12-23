@@ -64,7 +64,12 @@ export function Skills() {
         <span className="text-brand">{'{desenvolvimento full-stack}'}</span>
       </h2>
 
-      <Flicking className="flex mt-14" align="prev" autoResize={true}>
+      <Flicking
+        className="flex mt-14"
+        hideBeforeInit={true}
+        align="prev"
+        autoResize={true}
+      >
         {skillsData.map((skill) => (
           <div
             key={skill.id}
