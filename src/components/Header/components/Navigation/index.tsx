@@ -1,5 +1,6 @@
-import { List } from '@phosphor-icons/react'
 import Link from 'next/link'
+
+import { List } from '@phosphor-icons/react'
 
 export function Navigation() {
   return (

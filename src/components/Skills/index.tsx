@@ -1,8 +1,8 @@
 'use client'
 
+import Flicking from '@egjs/react-flicking'
 import Image from 'next/image'
 
-import Flicking from '@egjs/react-flicking'
 import '@egjs/react-flicking/dist/flicking.css'
 
 import './styles.css'

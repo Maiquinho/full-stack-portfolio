@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 
-import { Button } from './Button'
+import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
 import {
   ArrowDown,
   Briefcase,
@@ -11,7 +11,8 @@ import {
   LinkedinLogo,
   Megaphone,
 } from '@phosphor-icons/react'
-import { MY_PHONE, whatsappCustomMessage } from '../utils/whatsapp'
+
+import { Button } from './Button'
 
 export function Intro() {
   return (

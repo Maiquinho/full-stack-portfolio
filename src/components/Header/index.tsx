@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 
-import { Logo } from '../Logo'
 import { Navigation } from './components/Navigation'
+
+import { Logo } from '../Logo'
 
 export function Header() {
   return (

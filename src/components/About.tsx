@@ -2,13 +2,14 @@
 
 import { useEffect } from 'react'
 
+import AOS from 'aos'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import { ArrowElbowDownRight } from '@phosphor-icons/react'
+
 import { Button } from './Button'
 
 export function About() {

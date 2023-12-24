@@ -1,15 +1,16 @@
 'use client'
 
 import { useEffect } from 'react'
-import Link from 'next/link'
 
 import AOS from 'aos'
+import Link from 'next/link'
+
 import 'aos/dist/aos.css'
 
-import { Button } from './Button'
+import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
+import { Envelope, WhatsappLogo } from '@phosphor-icons/react'
 
-import { WhatsappLogo, Envelope } from '@phosphor-icons/react'
-import { whatsappCustomMessage, MY_PHONE } from '../utils/whatsapp'
+import { Button } from './Button'
 
 export function CallToAction() {
   useEffect(() => {
