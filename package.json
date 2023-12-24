@@ -13,6 +13,7 @@
     "@egjs/react-flicking": "^4.11.2",
     "@phosphor-icons/react": "^2.0.15",
     "aos": "^3.0.0-beta.6",
+    "eslint-plugin-import": "^2.29.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

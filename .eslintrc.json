@@ -3,7 +3,39 @@
     "@rocketseat/eslint-config/next", 
     "next/core-web-vitals"
   ],
+  "plugins": ["import"],
   "rules": {
-    "camelcase": ["error", {"allow": ["JetBrains_Mono"]}]
+    "sort-imports": [
+      "error",
+      { "ignoreCase": true, "ignoreDeclarationSort": true }
+    ],
+    "camelcase": ["error", {"allow": ["JetBrains_Mono"]}],
+    "import/order": [
+      "error",
+      {
+        "groups": [["external", "builtin"], "internal", ["sibling"]],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "@phosphor-icons/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal", "react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   }
 }
