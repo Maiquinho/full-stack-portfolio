@@ -20,7 +20,7 @@ interface Skill {
 
 const GET_SKILLS_QUERY = gql`
   query GetSkills {
-    skills {
+    skills(orderBy: skill_type_ASC) {
       id
       title
       image {
