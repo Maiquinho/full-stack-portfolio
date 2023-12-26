@@ -21,12 +21,27 @@
             "position": "before"
           },
           {
+            "pattern": "@apollo/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/lib/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/components/**",
             "group": "internal"
           },
           {
             "pattern": "@phosphor-icons/**",
             "group": "internal"
+          },
+          {
+            "pattern": "@egjs/**",
+            "group": "internal",
+            "position": "after"
           }
         ],
         "pathGroupsExcludedImportTypes": ["internal", "react"],
