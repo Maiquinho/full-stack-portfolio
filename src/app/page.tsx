@@ -1,6 +1,6 @@
 import { About } from '@/components/About'
 import { CallToAction } from '@/components/CallToAction'
-import { Intro } from '@/components/Intro'
+import { Intro } from '@/components/Intro/'
 import { Projects } from '@/components/Projects/'
 import { Skills } from '@/components/Skills/'
 

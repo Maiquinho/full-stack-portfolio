@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { List } from '@phosphor-icons/react'
+import { Toggle } from './components/Toggle'
 
 export function Navigation() {
   return (
@@ -27,10 +27,7 @@ export function Navigation() {
           </Link>
         </li>
       </nav>
-
-      <button className="block lg:hidden">
-        <List size={32} className="text-brand" />
-      </button>
+      <Toggle />
     </>
   )
 }
