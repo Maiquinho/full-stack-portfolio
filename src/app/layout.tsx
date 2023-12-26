@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 
 import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import { Header } from '@/components/Header/'
+import { UseClientApolloContextProvider } from '@/contexts/ApolloContext'
 
 import './globals.css'
 
@@ -29,7 +30,9 @@ export default function RootLayout({
       >
         <div className="flex flex-col h-screen w-11/12 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
           <Header />
-          {children}
+          <UseClientApolloContextProvider>
+            {children}
+          </UseClientApolloContextProvider>
           <Footer />
         </div>
       </body>
