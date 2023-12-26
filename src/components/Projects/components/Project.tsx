@@ -17,7 +17,7 @@ export function Project() {
 
   return (
     <article
-      className="flex-1 bg-gradient-to-b from-gray-900 from-40% bg-gray-600 px-9 pt-10"
+      className="flex-1 bg-gradient-to-b from-gray-900 from-40% bg-gray-600 border-2 border-solid border-gray-600 px-9 pt-10"
       data-aos="fade-right"
       data-aos-offset="200"
       data-aos-delay="50"
