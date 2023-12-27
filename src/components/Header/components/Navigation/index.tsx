@@ -1,33 +1,22 @@
-import Link from 'next/link'
-
-import { Toggle } from './components/Toggle'
+import { NavItem } from './components/NavItem'
 
 export function Navigation() {
   return (
     <>
       <nav className="hidden lg:flex uppercase list-none gap-10">
         <li>
-          <Link href="/" className="text-gray-100">
-            Home
-          </Link>
+          <NavItem uri="/" text="Home" active />
         </li>
         <li>
-          <Link href="#" className="text-gray-300 hover:text-gray-100">
-            Projetos
-          </Link>
+          <NavItem uri="#" text="Projetos" />
         </li>
         <li>
-          <Link href="#" className="text-gray-300">
-            Sobre
-          </Link>
+          <NavItem uri="#" text="Sobre" />
         </li>
         <li>
-          <Link href="#" className="text-gray-300">
-            Currículo
-          </Link>
+          <NavItem uri="#" text="Currículo" />
         </li>
       </nav>
-      <Toggle />
     </>
   )
 }
