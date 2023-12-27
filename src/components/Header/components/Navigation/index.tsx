@@ -5,7 +5,7 @@ export function Navigation() {
     <>
       <nav className="hidden lg:flex uppercase list-none gap-10">
         <li>
-          <NavItem uri="/" text="Home" active />
+          <NavItem uri="/" text="Home" />
         </li>
         <li>
           <NavItem uri="#" text="Projetos" />
