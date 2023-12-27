@@ -38,7 +38,7 @@ export function CallToAction() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+      <div className="flex flex-col lg:flex-row lg:items-start gap-2 lg:gap-6">
         <Link
           href={whatsappCustomMessage(
             MY_PHONE.unmasked,
