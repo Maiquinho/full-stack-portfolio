@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${jetBrainsMono.className} ${'overflow-x-hidden'} scrollbar-thin scrollbar-thumb-brand scrollbar-track-gray-600`}
       >
-        <div className="flex flex-col h-screen w-11/12 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
+        <div className="flex flex-col h-screen px-5 lg:px-0 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
           <Header />
           <UseClientApolloContextProvider>
             {children}
