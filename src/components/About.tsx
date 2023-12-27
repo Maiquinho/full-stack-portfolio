@@ -18,12 +18,12 @@ export function About() {
   }, [])
 
   return (
-    <section className="flex flex-col gap-2 lg:gap-5 mt-40">
-      <h2 className="block text-2lg lg:text-2xl text-gray-100 drop-shadow-md">
+    <section className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-40">
+      <h2 className="block text-2lg text-left lg:text-2xl text-gray-100 drop-shadow-md mb-4 lg:mb-0">
         Sobre Mim
       </h2>
 
-      <div className="flex flex-col-reverse lg:flex-row gap-14">
+      <div className="flex flex-col-reverse lg:flex-row gap-7 lg:gap-14">
         <div
           className="flex-1"
           data-aos="fade-right"
@@ -48,14 +48,14 @@ export function About() {
               criação de soluções que atendam às necessidades do usuário final.
             </p>
 
-            <Link href="/about" target="_blank" className="block w-fit">
+            <Link href="/about" target="_blank" className="block  lg:w-fit">
               <Button text="Leia mais" variant="fill" type="button" />
             </Link>
           </article>
         </div>
 
         <div
-          className="flex flex-col items-center justify-between gap-7"
+          className="hidden lg:flex flex-col items-center justify-between gap-7"
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"

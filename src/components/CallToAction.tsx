@@ -19,7 +19,7 @@ export function CallToAction() {
 
   return (
     <section
-      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-40"
+      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-20 lg:mt-40"
       data-aos="fade-up"
       data-aos-offset="200"
       data-aos-delay="50"
