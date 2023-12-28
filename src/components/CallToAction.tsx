@@ -58,7 +58,7 @@ export function CallToAction() {
           target="_blank"
         >
           <Button
-            text="Portfólio"
+            text="Enviar E-mail"
             variant="outline"
             type="button"
             icon={Envelope}
