@@ -43,7 +43,7 @@ export function Projects() {
   const { data } = useQuery<{ projects: Project[] }>(GET_PROJECTS_QUERY)
 
   return (
-    <section className="flex flex-col gap-4 mt-20 lg:mt-40">
+    <section id="projects" className="flex flex-col gap-4 mt-20 lg:mt-40">
       <header
         className="flex flex-col items-center mb-2 lg:mb-5"
         data-aos="fade-up"

@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation'
 interface NavItemProps {
   uri: string
   text: string
+  target?: '_blank' | '_self' | '_parent' | '_top'
 }
 
-export function NavItem({ uri, text }: NavItemProps) {
+export function NavItem({ uri, text, target }: NavItemProps) {
   const pathname = usePathname()
   const isActive = pathname === uri
 
@@ -20,6 +21,7 @@ export function NavItem({ uri, text }: NavItemProps) {
           ? 'text-gray-100 hover:text-gray-300'
           : 'text-gray-300 hover:text-gray-100'
       } transition-all ease-in uppercase px-5 py-4 lg:px-0 lg:py-0`}
+      target={target}
     >
       {text}
     </Link>
