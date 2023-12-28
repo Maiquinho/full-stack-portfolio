@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-
 import Link from 'next/link'
 
 const inter = Inter({
@@ -16,7 +15,7 @@ export function Footer() {
           <ul className="list-none flex gap-3">
             <li>
               <Link
-                href=""
+                href="https://github.com/maiquinho"
                 className={`${inter.className} text-gray-300 text-md`}
                 target="_blank"
               >
@@ -25,7 +24,7 @@ export function Footer() {
             </li>
             <li>
               <Link
-                href=""
+                href="https://gitlab.com/maiquinho"
                 className={`${inter.className} text-gray-300 text-md`}
                 target="_blank"
               >
@@ -34,7 +33,7 @@ export function Footer() {
             </li>
             <li>
               <Link
-                href=""
+                href="https://www.linkedin.com/in/michael-matheus/"
                 className={`${inter.className} text-gray-300 text-md`}
                 target="_blank"
               >
@@ -43,7 +42,7 @@ export function Footer() {
             </li>
             <li>
               <Link
-                href=""
+                href="https://instagram.com/__maiquinho"
                 className={`${inter.className} text-gray-300 text-md`}
                 target="_blank"
               >
