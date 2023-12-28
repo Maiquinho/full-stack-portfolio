@@ -18,7 +18,7 @@ export function About() {
   }, [])
 
   return (
-    <section className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-40">
+    <section id="about" className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-40">
       <h2 className="block text-2lg text-left lg:text-2xl text-gray-100 drop-shadow-md mb-4 lg:mb-0">
         Sobre Mim
       </h2>
