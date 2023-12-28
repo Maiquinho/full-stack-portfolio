@@ -5,12 +5,42 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import { gql, useQuery } from '@apollo/client'
+
 import { Project } from './components/Project'
+
+interface Project {
+  id: string
+  title: string
+  description: string
+  technologies: string
+  thumb: {
+    url: string
+  }
+  repoURL: string
+}
+
+const GET_PROJECTS_QUERY = gql`
+  query GetProjects {
+    projects {
+      id
+      title
+      description
+      technologies
+      thumb {
+        url
+      }
+      repoURL
+    }
+  }
+`
 
 export function Projects() {
   useEffect(() => {
     AOS.init()
   }, [])
+
+  const { data } = useQuery<{ projects: Project[] }>(GET_PROJECTS_QUERY)
 
   return (
     <section className="flex flex-col gap-4 mt-20 lg:mt-40">
@@ -28,9 +58,17 @@ export function Projects() {
         </span>
       </header>
 
-      <div className="flex flex-col lg:flex-row gap-10">
-        <Project />
-        <Project />
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:flex-wrap gap-10">
+        {data?.projects.map((project) => (
+          <Project
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            thumb={project.thumb.url}
+            repoURL={project.repoURL}
+          />
+        ))}
       </div>
     </section>
   )
