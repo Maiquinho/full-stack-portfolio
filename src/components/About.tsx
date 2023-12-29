@@ -48,7 +48,7 @@ export function About() {
               criação de soluções que atendam às necessidades do usuário final.
             </p>
 
-            <Link href="/about" target="_blank" className="block  lg:w-fit">
+            <Link href="#" className="block lg:w-fit">
               <Button text="Leia mais" variant="fill" type="button" />
             </Link>
           </article>
