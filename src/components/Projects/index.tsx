@@ -22,7 +22,7 @@ interface Project {
 
 const GET_PROJECTS_QUERY = gql`
   query GetProjects {
-    projects {
+    projects(orderBy: updatedAt_DESC) {
       id
       title
       description
