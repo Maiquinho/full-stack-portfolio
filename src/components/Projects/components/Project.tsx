@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { LinkSimple } from '@phosphor-icons/react'
+import { GithubLogo, GlobeSimple, LinkSimple } from '@phosphor-icons/react'
 
 interface ProjectProps {
   title: string
@@ -16,6 +16,7 @@ interface ProjectProps {
   technologies: string
   thumb: string
   repoURL: string
+  productionURL: string
 }
 
 export function Project({
@@ -24,6 +25,7 @@ export function Project({
   technologies,
   thumb,
   repoURL,
+  productionURL,
 }: ProjectProps) {
   useEffect(() => {
     AOS.init()
@@ -48,14 +50,28 @@ export function Project({
           Tecnologias utilizadas: {technologies}
         </p>
 
-        <Link
-          href={repoURL}
-          className="flex gap-2 text-md text-brand hover:drop-shadow-md"
-          target="_blank"
-        >
-          Ver Repositório
-          <LinkSimple size={24} className="text-brand" />
-        </Link>
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-6">
+          {repoURL && (
+            <Link
+              href={repoURL}
+              className="flex items-center gap-2 text-md text-brand hover:drop-shadow-md underline"
+              target="_blank"
+            >
+              <GithubLogo size={20} className="text-brand" />
+              Ver repositório
+            </Link>
+          )}
+          {productionURL && (
+            <Link
+              href={productionURL}
+              className="flex items-center gap-2 text-md text-brand hover:drop-shadow-md underline"
+              target="_blank"
+            >
+              <GlobeSimple size={20} className="text-brand" />
+              Ver em produção
+            </Link>
+          )}
+        </div>
       </div>
 
       <Image src={thumb} width={469} height={252} alt={title} />
