@@ -18,6 +18,7 @@ interface Project {
     url: string
   }
   repoURL: string
+  productionURL: string
 }
 
 const GET_PROJECTS_QUERY = gql`
@@ -31,6 +32,7 @@ const GET_PROJECTS_QUERY = gql`
         url
       }
       repoURL
+      productionURL
     }
   }
 `
@@ -67,6 +69,7 @@ export function Projects() {
             technologies={project.technologies}
             thumb={project.thumb.url}
             repoURL={project.repoURL}
+            productionURL={project.productionURL}
           />
         ))}
       </div>
