@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        blink: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        blink: 'blink 1s ease-in-out infinite',
+      },
       fontSize: {
         sm: ['14px', '1.6'],
         md: ['16px', '1.6'],
@@ -19,7 +29,9 @@ const config: Config = {
         cta: ['48px', '1.6'],
       },
       colors: {
+        alert: '#e3b341',
         brand: '#66FF66',
+        whatsapp: '#25d366',
         gray: {
           100: '#E1E1E6',
           300: '#C3C4C5',

@@ -8,8 +8,6 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { ArrowElbowDownRight } from '@phosphor-icons/react'
-
 import { Button } from './Button'
 
 export function About() {
@@ -18,7 +16,10 @@ export function About() {
   }, [])
 
   return (
-    <section id="about" className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-40">
+    <section
+      id="about"
+      className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-32 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
+    >
       <h2 className="block text-2lg text-left lg:text-2xl text-gray-100 drop-shadow-md mb-4 lg:mb-0">
         Sobre Mim
       </h2>
@@ -26,9 +27,9 @@ export function About() {
       <div className="flex flex-col-reverse lg:flex-row gap-7 lg:gap-14">
         <div
           className="flex-1"
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
+          // data-aos="fade-right"
+          // data-aos-offset="200"
+          // data-aos-delay="50"
         >
           <article>
             <p className="text-sm lg:text-md text-gray-100 mb-4">
@@ -66,14 +67,6 @@ export function About() {
             height={275}
             alt=""
           />
-          <Link
-            href="/assets/michael-matheus-cv.pdf"
-            className="flex gap-2 text-md text-brand hover:drop-shadow-md"
-            target="_blank"
-          >
-            Ver meu currículo
-            <ArrowElbowDownRight size={24} className="text-brand" />
-          </Link>
         </div>
       </div>
     </section>
