@@ -50,7 +50,7 @@ export function Projects() {
       className="flex flex-col gap-4 mt-10 lg:mt-10 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
     >
       <header
-        className="flex flex-col items-center mb-2 lg:mb-5"
+        className="flex flex-col lg:items-center mb-2 lg:mb-5"
         // data-aos="fade-up"
         // data-aos-offset="200"
         // data-aos-delay="50"

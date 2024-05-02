@@ -34,9 +34,9 @@ export function Project({
   return (
     <article
       className="flex flex-col justify-between w-full lg:w-[48%] bg-gradient-to-b from-gray-900 from-40% bg-gray-600 border-2 border-solid border-gray-600 px-9 pt-10"
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-delay="50"
+      // data-aos="fade-right"
+      // data-aos-offset="200"
+      // data-aos-delay="50"
     >
       <header>
         <h3 className="text-lg lg:text-2lg text-gray-100 mb-2 lg:mb-5">
@@ -79,7 +79,7 @@ export function Project({
               type="button"
             >
               <GlobeSimple size={20} className="text-alert" />
-              Projeto em desenvolvimento
+              Disponível em breve
             </button>
           )}
         </div>
