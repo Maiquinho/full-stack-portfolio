@@ -14,11 +14,7 @@ export function Navigation() {
           <NavItem uri="#about" text="Sobre" />
         </li>
         <li>
-          <NavItem
-            uri="/assets/michael-matheus-cv.pdf"
-            text="Currículo"
-            target="_blank"
-          />
+          <NavItem uri="#contact" text="Contato" />
         </li>
       </nav>
     </>

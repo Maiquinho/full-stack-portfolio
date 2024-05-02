@@ -3,6 +3,7 @@ import { JetBrains_Mono } from 'next/font/google'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header/'
+// import { WhatsappBallon } from '@/components/WhatsappBallon'
 import { UseClientApolloContextProvider } from '@/contexts/ApolloContext'
 
 import './globals.css'
@@ -13,9 +14,10 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfólio Desenvolvedor Full-Stack - Michael Matheus',
+  title: 'Criação de sites | Michael Matheus',
   description:
-    'Sou Michael Matheus, desenvolvedor Full-stack JavaScript. Descubra meu mundo de códigos inovadores. Convido você a explorar meus projetos ou me contratar para desafios incríveis.',
+    'Contrate um especialista em sites freelancer para criar, otimizar e manter sua presença online. Soluções personalizadas para seus projetos web.',
+  robots: 'index, follow',
 }
 
 export default function RootLayout({
@@ -28,13 +30,14 @@ export default function RootLayout({
       <body
         className={`${jetBrainsMono.className} ${'overflow-x-hidden'} scrollbar-thin scrollbar-thumb-brand scrollbar-track-gray-600`}
       >
-        <div className="flex flex-col h-screen px-5 lg:px-0 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
+        <div className="flex flex-col h-full px-5 lg:px-0 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
           <Header />
           <UseClientApolloContextProvider>
             {children}
           </UseClientApolloContextProvider>
-          <Footer />
         </div>
+        <Footer />
+        {/* <WhatsappBallon /> */}
       </body>
     </html>
   )

@@ -4,28 +4,29 @@ import Link from 'next/link'
 
 import { Button } from '@/components/Button'
 import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
-import { Briefcase, Megaphone } from '@phosphor-icons/react'
+import { Briefcase, WhatsappLogo } from '@phosphor-icons/react'
 
 export function CallToAction() {
   return (
-    <div className="flex items-start gap-2 lg:gap-6">
+    <div className="flex flex-col lg:flex-row items-start gap-2 lg:gap-6">
       <Link
         href={whatsappCustomMessage(
           MY_PHONE.unmasked,
-          `Olá, vi seu portfólio e gostaria de contratar seus serviços. \n\nNome: ---------\nTelefone: ---------\nE-mail: ---------`,
+          `*Proposta comercial - site*\n\nOlá Michael,\n\nVisitei seu site e tenho interesse em uma proposta para desenvolver um site para minha empresa.\n\n*Caro cliente, ao solicitar uma proposta para o desenvolvimento do seu site, ficaríamos muito gratos se você pudesse nos enviar o seu logo, caso já o tenha. Isso nos ajudará a entender melhor a identidade visual da sua empresa e a criar um design que esteja alinhado com a sua marca.*\n\n*Nome:* ---------\n*Empresa:* ---------\n*Segmento:* ---------\n*Telefone:* ---------\n*E-mail:* ---------`,
         )}
         target="_blank"
+        className="w-full lg:w-fit"
       >
         <Button
-          text="Contratar"
+          text="Solicitar proposta"
           variant="fill"
           type="button"
-          icon={Megaphone}
+          icon={WhatsappLogo}
         />
       </Link>
-      <Link href="/portfolio" target="_blank">
+      <Link href="/#projects" className="w-full lg:w-fit">
         <Button
-          text="Portfólio"
+          text="Ver Portfólio"
           variant="outline"
           type="button"
           icon={Briefcase}

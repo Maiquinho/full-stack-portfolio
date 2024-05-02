@@ -45,15 +45,18 @@ export function Projects() {
   const { data } = useQuery<{ projects: Project[] }>(GET_PROJECTS_QUERY)
 
   return (
-    <section id="projects" className="flex flex-col gap-4 mt-20 lg:mt-40">
+    <section
+      id="projects"
+      className="flex flex-col gap-4 mt-10 lg:mt-10 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
+    >
       <header
         className="flex flex-col items-center mb-2 lg:mb-5"
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
+        // data-aos="fade-up"
+        // data-aos-offset="200"
+        // data-aos-delay="50"
       >
         <h2 className="text-2lg lg:text-2xl text-gray-100 drop-shadow-md mb-2 lg:mb-5">
-          Projetos pessoais
+          Nossos Cases
         </h2>
         <span className="text-sm lg:text-md text-gray-100">
           Confira abaixo alguns dos meus últimos projetos desenvolvidos

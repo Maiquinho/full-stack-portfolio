@@ -19,10 +19,11 @@ export function CallToAction() {
 
   return (
     <section
-      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-20 lg:mt-40"
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
+      id="contact"
+      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-20 lg:mt-32 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
+      // data-aos="fade-up"
+      // data-aos-offset="200"
+      // data-aos-delay="50"
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         <h2 className="flex-1 text-xl lg:text-cta text-gray-100">
@@ -42,19 +43,19 @@ export function CallToAction() {
         <Link
           href={whatsappCustomMessage(
             MY_PHONE.unmasked,
-            `Olá, vi seu portfólio e gostaria de contratar seus serviços. \n\nNome: ---------\nTelefone: ---------\nE-mail: ---------`,
+            `*Proposta comercial - site*\n\nOlá Michael,\n\nVisitei seu site e tenho interesse em uma proposta para desenvolver um site para minha empresa.\n\n*Caro cliente, ao solicitar uma proposta para o desenvolvimento do seu site, ficaríamos muito gratos se você pudesse nos enviar o seu logo, caso já o tenha. Isso nos ajudará a entender melhor a identidade visual da sua empresa e a criar um design que esteja alinhado com a sua marca.*\n\n*Nome:* ---------\n*Empresa:* ---------\n*Segmento:* ---------\n*Telefone:* ---------\n*E-mail:* ---------`,
           )}
           target="_blank"
         >
           <Button
-            text="Chamar no WhatsApp"
+            text="Solicitar proposta"
             variant="fill"
             type="button"
             icon={WhatsappLogo}
           />
         </Link>
         <Link
-          href="mailto:michaelmatheus2001@gmail.com?subject=Portfólio Web!&body=Olá, Michael! Vi seu portfólio e gostaria de conversar com você."
+          href="mailto:contato@michaelmatheusprojetos.com.br"
           target="_blank"
         >
           <Button

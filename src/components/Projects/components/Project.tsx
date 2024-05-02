@@ -66,10 +66,21 @@ export function Project({
               href={productionURL}
               className="flex items-center gap-2 text-md text-brand hover:drop-shadow-md underline"
               target="_blank"
+              title="Clique para ver o projeto online."
             >
               <GlobeSimple size={20} className="text-brand" />
               Ver em produção
             </Link>
+          )}
+          {!productionURL && (
+            <button
+              className="flex items-center gap-2 text-md text-alert hover:drop-shadow-md"
+              disabled
+              type="button"
+            >
+              <GlobeSimple size={20} className="text-alert" />
+              Projeto em desenvolvimento
+            </button>
           )}
         </div>
       </div>
