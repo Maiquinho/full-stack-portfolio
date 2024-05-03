@@ -1,6 +1,6 @@
 export const MY_PHONE = {
-  masked: '(11) 96348-5429',
-  unmasked: '11963485429',
+  masked: '(11) 96826-0475',
+  unmasked: '11968260475',
 }
 
 export const whatsappCustomMessage = (phone: string, text: string) => {
