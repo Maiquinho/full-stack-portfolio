@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { GithubLogo, GlobeSimple, LinkSimple } from '@phosphor-icons/react'
+import { GithubLogo, GlobeSimple } from '@phosphor-icons/react'
 
 interface ProjectProps {
   title: string
