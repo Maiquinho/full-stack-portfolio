@@ -55,7 +55,7 @@ export function CallToAction() {
           />
         </Link>
         <Link
-          href="mailto:contato@michaelmatheusprojetos.com.br"
+          href="mailto:contato@michaelmatheus.dev"
           target="_blank"
         >
           <Button

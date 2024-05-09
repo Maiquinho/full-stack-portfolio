@@ -26,10 +26,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body
-        className={`${jetBrainsMono.className} ${'overflow-x-hidden'} scrollbar-thin scrollbar-thumb-brand scrollbar-track-gray-600`}
-      >
+    <html
+      lang="pt-br"
+      className="scrollbar-thin scrollbar-thumb-brand scrollbar-track-gray-600"
+    >
+      <body className={`${jetBrainsMono.className} ${'overflow-x-hidden'}`}>
         <div className="flex flex-col h-full px-5 lg:px-0 lg:w-[1120px] m-auto selection:bg-gray-600 selection:text-brand">
           <Header />
           <UseClientApolloContextProvider>
