@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 import * as Dialog from '@radix-ui/react-dialog'
 
-import { NavItem } from '../../NavItem'
+import { NavItem } from '../../nav-item'
 
 export function MobileMenu() {
   const [scrollOffset, setScrollOffset] = useState<number>(0)
