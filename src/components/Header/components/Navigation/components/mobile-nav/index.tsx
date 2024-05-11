@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 
 import { List } from '@phosphor-icons/react'
 
-import { MobileMenu } from './components/MobileMenu'
+import { MobileMenu } from './components/mobile-menu'
 
 export function MobileNav() {
   return (

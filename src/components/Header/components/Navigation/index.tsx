@@ -1,4 +1,4 @@
-import { NavItem } from './components/NavItem'
+import { NavItem } from './components/nav-item'
 
 export function Navigation() {
   return (
