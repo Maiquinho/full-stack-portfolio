@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
 import { Envelope, WhatsappLogo } from '@phosphor-icons/react'
 
-import { Button } from './Button'
+import { Button } from './button'
 
 export function CallToAction() {
   useEffect(() => {
@@ -20,26 +20,23 @@ export function CallToAction() {
   return (
     <section
       id="contact"
-      className="bg-gray-600 border-b-4 border-b-brand flex flex-col gap-5 p-10 lg:p-20 mt-20 lg:mt-32 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
-      // data-aos="fade-up"
-      // data-aos-offset="200"
-      // data-aos-delay="50"
+      className="mt-20 flex flex-col gap-5 border-b-4 border-b-brand bg-gray-600 p-10 font-mono before:invisible before:-mt-1 before:block before:h-1 before:content-[''] lg:mt-32 lg:p-20"
     >
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-        <h2 className="flex-1 text-xl lg:text-cta text-gray-100">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
+        <h2 className="flex-1 text-xl text-gray-100 lg:text-cta">
           Vamos <span className="text-brand">{'{trabalhar}'}</span> juntos?
         </h2>
         <div className="lg:w-[361px]">
-          <p className="text-sm lg:text-md text-gray-100 mb-4">
+          <p className="mb-4 text-sm text-gray-100 lg:text-md">
             Sou apaixonado por transformar ideias em soluções inovadoras e estou
             pronto para enfrentar novos desafios.
           </p>
-          <p className="text-sm lg:text-md text-gray-100">
+          <p className="text-sm text-gray-100 lg:text-md">
             Vamos construir algo incrível? 🚀
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row lg:items-start gap-2 lg:gap-6">
+      <div className="flex flex-col gap-2 lg:flex-row lg:items-start lg:gap-6">
         <Link
           href={whatsappCustomMessage(
             MY_PHONE.unmasked,

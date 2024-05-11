@@ -2,8 +2,8 @@ import { SkillsList } from './components/SkillsList'
 
 export function Skills() {
   return (
-    <section className="flex flex-col mt-20">
-      <h2 className="text-2lg lg:text-2xl text-gray-100 drop-shadow-md mb-2 lg:mb-4">
+    <section className="mt-20 flex flex-col">
+      <h2 className="mb-2 text-2lg text-gray-100 drop-shadow-md lg:mb-4 lg:text-2xl">
         Tecnologias que utilizo no{' '}
         <span className="text-brand">{'{desenvolvimento full-stack}'}</span>
       </h2>

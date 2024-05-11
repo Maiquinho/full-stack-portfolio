@@ -12,10 +12,10 @@ import {
 
 export function IntroFooter() {
   return (
-    <footer className="flex justify-between z-30">
+    <footer className="z-30 flex justify-between">
       <div>
         <Link href="#projects" title="Clique para ir aos projetos">
-          <ArrowDown size={32} className="text-gray-100 animate-bounce" />
+          <ArrowDown size={32} className="animate-bounce text-gray-100" />
         </Link>
       </div>
       <div className="flex gap-4">
@@ -39,7 +39,7 @@ export function IntroFooter() {
         >
           <WhatsappLogo
             size={32}
-            className="text-gray-100 hover:text-gray-300 transition-colors ease-in"
+            className="text-gray-100 transition-colors ease-in hover:text-gray-300"
           />
         </Link>
         <Link
@@ -49,7 +49,7 @@ export function IntroFooter() {
         >
           <InstagramLogo
             size={32}
-            className="text-gray-100 hover:text-gray-300 transition-colors ease-in"
+            className="text-gray-100 transition-colors ease-in hover:text-gray-300"
           />
         </Link>
         {/* <Link
@@ -71,7 +71,7 @@ export function IntroFooter() {
           {' '}
           <Envelope
             size={32}
-            className="text-gray-100 hover:text-gray-300 transition-colors ease-in"
+            className="text-gray-100 transition-colors ease-in hover:text-gray-300"
           />
         </Link>
       </div>

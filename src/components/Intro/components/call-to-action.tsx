@@ -8,7 +8,7 @@ import { Briefcase, WhatsappLogo } from '@phosphor-icons/react'
 
 export function CallToAction() {
   return (
-    <div className="flex flex-col lg:flex-row items-start gap-2 lg:gap-6">
+    <div className="flex flex-col items-start gap-2 lg:flex-row lg:gap-6">
       <Link
         href={whatsappCustomMessage(
           MY_PHONE.unmasked,

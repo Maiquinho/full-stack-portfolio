@@ -35,7 +35,7 @@ export function SkillsList() {
 
   return (
     <Flicking
-      className="flex mt-14"
+      className="mt-14 flex"
       hideBeforeInit={true}
       align="prev"
       autoResize={true}
@@ -43,7 +43,7 @@ export function SkillsList() {
       {data?.skills.map((skill) => (
         <div
           key={skill.id}
-          className="flex flex-col gap-4 items-center justify-between w-min panel hover:opacity-100"
+          className="panel flex w-min flex-col items-center justify-between gap-4 hover:opacity-100"
         >
           <Image
             src={skill.image.url}
@@ -52,7 +52,7 @@ export function SkillsList() {
             alt={`ícone descritivo da tecnologia ${skill.title}`}
             title={skill.title}
           />
-          <span className="text-gray-100 text-md">{skill.title}</span>
+          <span className="text-md text-gray-100">{skill.title}</span>
         </div>
       ))}
     </Flicking>

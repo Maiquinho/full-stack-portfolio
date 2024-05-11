@@ -33,28 +33,28 @@ export function Project({
 
   return (
     <article
-      className="flex flex-col justify-between w-full lg:w-[48%] bg-gradient-to-b from-gray-900 from-40% bg-gray-600 border-2 border-solid border-gray-600 px-9 pt-10"
+      className="flex w-full flex-col justify-between border-2 border-solid border-gray-600 bg-gray-600 bg-gradient-to-b from-gray-900 from-40% px-9 pt-10 lg:w-[48%]"
       // data-aos="fade-right"
       // data-aos-offset="200"
       // data-aos-delay="50"
     >
       <header>
-        <h3 className="text-lg lg:text-2lg text-gray-100 mb-2 lg:mb-5">
+        <h3 className="mb-2 text-lg text-gray-100 lg:mb-5 lg:text-2lg">
           {title}
         </h3>
       </header>
 
       <div className="mb-14">
-        <p className="text-sm text-gray-100 mb-4">{description}</p>
-        <p className="text-sm text-gray-100 mb-6">
+        <p className="mb-4 text-sm text-gray-100">{description}</p>
+        <p className="mb-6 text-sm text-gray-100">
           Tecnologias utilizadas: {technologies}
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-2 lg:gap-6">
+        <div className="flex flex-col gap-2 lg:flex-row lg:gap-6">
           {repoURL && (
             <Link
               href={repoURL}
-              className="flex items-center gap-2 text-md text-brand hover:drop-shadow-md underline"
+              className="flex items-center gap-2 text-md text-brand underline hover:drop-shadow-md"
               target="_blank"
             >
               <GithubLogo size={20} className="text-brand" />
@@ -64,7 +64,7 @@ export function Project({
           {productionURL && (
             <Link
               href={productionURL}
-              className="flex items-center gap-2 text-md text-brand hover:drop-shadow-md underline"
+              className="flex items-center gap-2 text-md text-brand underline hover:drop-shadow-md"
               target="_blank"
               title="Clique para ver o projeto online."
             >

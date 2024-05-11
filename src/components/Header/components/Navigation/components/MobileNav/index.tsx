@@ -8,7 +8,7 @@ import { MobileMenu } from './components/MobileMenu'
 
 export function MobileNav() {
   return (
-    <div className="block lg:hidden z-50">
+    <div className="z-50 block lg:hidden">
       <Dialog.Root>
         <Dialog.Trigger asChild>
           <button className="border border-brand p-2">

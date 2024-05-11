@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { Button } from './Button'
+import { Button } from './button'
 
 export function About() {
   useEffect(() => {
@@ -18,21 +18,16 @@ export function About() {
   return (
     <section
       id="about"
-      className="flex flex-col gap-2 lg:gap-5 mt-20 lg:mt-32 before:content-[''] before:block before:h-1 before:-mt-1 before:invisible"
+      className="mt-20 flex flex-col gap-2 font-mono before:invisible before:-mt-1 before:block before:h-1 before:content-[''] lg:mt-32 lg:gap-5"
     >
-      <h2 className="block text-2lg text-left lg:text-2xl text-gray-100 drop-shadow-md mb-4 lg:mb-0">
+      <h2 className="mb-4 block text-left text-2lg text-gray-100 drop-shadow-md lg:mb-0 lg:text-2xl">
         Sobre Mim
       </h2>
 
-      <div className="flex flex-col-reverse lg:flex-row gap-7 lg:gap-14">
-        <div
-          className="flex-1"
-          // data-aos="fade-right"
-          // data-aos-offset="200"
-          // data-aos-delay="50"
-        >
+      <div className="flex flex-col-reverse gap-7 lg:flex-row lg:gap-14">
+        <div className="flex-1">
           <article>
-            <p className="text-sm lg:text-md text-gray-100 mb-4">
+            <p className="mb-4 text-sm text-gray-100 lg:text-md">
               Após concluir meu curso técnico em informática em 2019, mergulhei
               no mundo da programação, participando ativamente de diversos
               bootcamps para aprimorar minhas habilidades. Atualmente, sou aluno
@@ -40,7 +35,7 @@ export function About() {
               desenvolvimento de software e expandir minha expertise nas
               tecnologias mais modernas do mercado.
             </p>
-            <p className="text-sm lg:text-md text-gray-100 mb-6">
+            <p className="mb-6 text-sm text-gray-100 lg:text-md">
               Minha experiência concentra-se no desenvolvimento JavaScript,
               abrangendo tecnologias como ReactJS, TypeScript e Node.js.
               Trabalhando com essa stack, busco constantemente me atualizar e
@@ -56,7 +51,7 @@ export function About() {
         </div>
 
         <div
-          className="hidden lg:flex flex-col items-center justify-between gap-7"
+          className="hidden flex-col items-center justify-between gap-7 lg:flex"
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"

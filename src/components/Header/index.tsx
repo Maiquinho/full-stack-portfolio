@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { Navigation } from './components/Navigation'
 import { MobileNav } from './components/Navigation/components/MobileNav'
 
-import { Logo } from '../Logo'
+import { Logo } from '../logo'
 
 export function Header() {
   const [scrollOffset, setScrollOffset] = useState<number>(0)
@@ -22,11 +22,11 @@ export function Header() {
 
   return (
     <header
-      className={`bg-gray-600 flex items-center justify-between sticky ${
+      className={`sticky flex items-center justify-between bg-gray-600 font-mono ${
         scrollOffset < 100 ? 'top-5 lg:top-10' : 'top-0 lg:top-0'
-      } mt-5 lg:mt-10 px-5 lg:px-11 py-4 lg:py-7 transition-all duration-150 z-50`}
+      } z-50 mt-5 px-5 py-4 transition-all duration-150 lg:mt-10 lg:px-11 lg:py-7`}
     >
-      <nav className="flex items-center justify-between flex-row-reverse lg:flex-row gap-3 w-full">
+      <nav className="flex w-full flex-row-reverse items-center justify-between gap-3 lg:flex-row">
         <MobileNav />
         <Link href="/">
           <Logo />
