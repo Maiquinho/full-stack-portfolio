@@ -44,7 +44,7 @@ export function WhatsappBallon() {
   return (
     <div className={`${ubuntu.className} fixed bottom-10 right-10 z-50`}>
       <button
-        className="flex items-center justify-center max-w-16 min-h-16 absolute bottom-0 right-0 outline-0 rounded-full border-0 bg-whatsapp shadow-sm transition-all hover:bottom-2 hover:shadow-md hover:transition-all"
+        className="absolute bottom-0 right-0 flex min-h-16 max-w-16 items-center justify-center rounded-full border-0 bg-whatsapp shadow-sm outline-0 transition-all hover:bottom-2 hover:shadow-md hover:transition-all"
         onClick={toggleWidget}
       >
         <div className="flex items-center justify-center">

@@ -20,7 +20,7 @@ export function NavItem({ uri, text, target }: NavItemProps) {
         isActive
           ? 'text-gray-100 hover:text-gray-300'
           : 'text-gray-300 hover:text-gray-100'
-      } transition-all ease-in uppercase px-5 py-4 lg:px-0 lg:py-0`}
+      } px-5 py-4 font-mono uppercase transition-all ease-in lg:px-0 lg:py-0`}
       target={target}
     >
       {text}

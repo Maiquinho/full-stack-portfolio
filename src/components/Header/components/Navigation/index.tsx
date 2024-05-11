@@ -3,7 +3,7 @@ import { NavItem } from './components/NavItem'
 export function Navigation() {
   return (
     <>
-      <nav className="hidden lg:flex uppercase list-none gap-10">
+      <nav className="hidden list-none gap-10 uppercase lg:flex">
         <li>
           <NavItem uri="/" text="Home" />
         </li>

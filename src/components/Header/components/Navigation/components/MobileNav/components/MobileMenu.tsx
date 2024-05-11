@@ -23,7 +23,7 @@ export function MobileMenu() {
       <Dialog.Content
         className={`fixed ${
           scrollOffset < 100 ? 'top-[7rem]' : 'top-[5.625rem]'
-        } left-4 w-11/12 flex flex-col gap-2 bg-gray-600 p-4 z-50`}
+        } left-4 z-50 flex w-11/12 flex-col gap-2 bg-gray-600 p-4`}
       >
         <nav className="flex flex-col">
           <NavItem uri="/" text="Home" />

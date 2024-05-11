@@ -18,6 +18,10 @@ const config: Config = {
       animation: {
         blink: 'blink 1s ease-in-out infinite',
       },
+      fontFamily: {
+        mono: 'var(--font-jet-brains-mono)',
+        sans: 'var(--font-inter)',
+      },
       fontSize: {
         sm: ['14px', '1.6'],
         md: ['16px', '1.6'],

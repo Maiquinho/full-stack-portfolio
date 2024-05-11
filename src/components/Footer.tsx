@@ -1,26 +1,19 @@
-import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import logoSquare from 'public/assets/logo-square.svg'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
 export function Footer() {
   return (
     <footer className="bg-gray-600 selection:bg-gray-600 selection:text-brand">
-      <div className="px-5 lg:px-0 lg:w-[1120px] m-auto flex flex-col lg:flex-row lg:justify-between lg:items-end py-10 mt-20">
+      <div className="m-auto mt-20 flex flex-col px-5 py-10 lg:w-[1120px] lg:flex-row lg:items-end lg:justify-between lg:px-0">
         <div className="flex flex-col gap-2">
           <nav>
-            <ul className="list-none flex gap-3">
+            <ul className="flex list-none gap-3">
               <li>
                 <Link
                   href="https://github.com/maiquinho"
-                  className={`${inter.className} text-gray-300 text-md`}
+                  className="font-sans text-md text-gray-300"
                   target="_blank"
                 >
                   Github
@@ -29,7 +22,7 @@ export function Footer() {
               <li>
                 <Link
                   href="https://gitlab.com/maiquinho"
-                  className={`${inter.className} text-gray-300 text-md`}
+                  className="font-sans text-md text-gray-300"
                   target="_blank"
                 >
                   Gitlab
@@ -38,7 +31,7 @@ export function Footer() {
               <li>
                 <Link
                   href="https://www.linkedin.com/in/michael-matheus/"
-                  className={`${inter.className} text-gray-300 text-md`}
+                  className="font-sans text-md text-gray-300"
                   target="_blank"
                 >
                   LinkedIn
@@ -47,7 +40,7 @@ export function Footer() {
               <li>
                 <Link
                   href="https://instagram.com/michaelmatheus.dev"
-                  className={`${inter.className} text-gray-300 text-md`}
+                  className="font-sans text-md text-gray-300"
                   target="_blank"
                 >
                   Instagram
@@ -55,7 +48,7 @@ export function Footer() {
               </li>
             </ul>
           </nav>
-          <span className={`${inter.className} text-gray-300 text-sm`}>
+          <span className="font-sans text-sm text-gray-300">
             &copy; {new Date().getFullYear()} Michael Matheus - Todos os
             direitos reservados. CNPJ 34.611.733/0001-84
           </span>
