@@ -33,7 +33,7 @@ export function Project({
 
   return (
     <article
-      className="flex w-full flex-col justify-between border-2 border-solid border-gray-600 bg-gray-600 bg-gradient-to-b from-gray-900 from-40% px-9 pt-10 lg:w-[48%]"
+      className="flex w-full flex-col justify-between border-2 border-solid border-gray-600 bg-gray-600 bg-gradient-to-b from-gray-900 from-40% px-9 pt-10"
       // data-aos="fade-right"
       // data-aos-offset="200"
       // data-aos-delay="50"

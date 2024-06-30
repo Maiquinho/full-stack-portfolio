@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className={`${jetBrainsMono.variable} ${inter.variable} scrollbar-thin scrollbar-track-gray-600 scrollbar-thumb-brand`}
+      className={`scroll-smooth ${jetBrainsMono.variable} ${inter.variable} scrollbar-thin scrollbar-track-gray-600 scrollbar-thumb-brand`}
     >
       <body className="overflow-x-hidden">
         <div className="m-auto flex h-full flex-col px-5 selection:bg-gray-600 selection:text-brand lg:w-[1120px] lg:px-0">

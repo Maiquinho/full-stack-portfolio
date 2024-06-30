@@ -14,6 +14,9 @@ export function Navigation() {
           <NavItem uri="#about" text="Sobre" />
         </li>
         <li>
+          <NavItem uri="#" text="Blog" />
+        </li>
+        <li>
           <NavItem uri="#contact" text="Contato" />
         </li>
       </nav>
