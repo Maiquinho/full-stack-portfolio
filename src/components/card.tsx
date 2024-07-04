@@ -2,10 +2,10 @@ interface CardProps {
   title: string
   content: string
   variant: 'active' | 'inactive'
-  url?: string
+  // url?: string
 }
 
-export function Card({ title, content, variant, url }: CardProps) {
+export function Card({ title, content, variant }: CardProps) {
   return (
     <>
       {variant === 'active' && (

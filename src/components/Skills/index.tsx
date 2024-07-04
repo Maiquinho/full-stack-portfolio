@@ -1,4 +1,4 @@
-import { SkillsList } from './components/SkillsList'
+import { SkillsList } from '@/components/skills/components/skills-list'
 
 export function Skills() {
   return (

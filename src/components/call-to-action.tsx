@@ -50,7 +50,7 @@ export function CallToAction() {
             icon={WhatsappLogo}
           />
         </Link>
-        <Link href="mailto:contato@michaelmatheus.dev" target="_blank">
+        <Link href="mailto:michaelmatheus2001@gmail.com" target="_blank">
           <Button
             text="Enviar E-mail"
             variant="outline"
