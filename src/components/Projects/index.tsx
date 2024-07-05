@@ -66,7 +66,7 @@ export function Projects() {
     >
       <header className="mb-2 flex flex-col lg:mb-5 lg:items-center">
         <h2 className="mb-2 text-2lg text-gray-100 drop-shadow-md lg:mb-5 lg:text-2xl">
-          Cases
+          Meus Cases
         </h2>
         <span className="text-sm text-gray-100 lg:text-md">
           Confira abaixo alguns dos meus últimos projetos desenvolvidos

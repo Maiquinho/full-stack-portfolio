@@ -8,8 +8,9 @@ import Link from 'next/link'
 import 'aos/dist/aos.css'
 
 import { Button } from '@/components/button'
-import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
 import { Envelope, WhatsappLogo } from '@phosphor-icons/react'
+
+import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
 
 export function CallToAction() {
   useEffect(() => {

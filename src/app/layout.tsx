@@ -1,8 +1,9 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header/'
-import { UseClientApolloContextProvider } from '@/contexts/apollo-context'
 
 import { inter, jetBrainsMono } from './fonts'
+
+import { UseClientApolloContextProvider } from '@/contexts/apollo-context'
 
 import './globals.css'
 
