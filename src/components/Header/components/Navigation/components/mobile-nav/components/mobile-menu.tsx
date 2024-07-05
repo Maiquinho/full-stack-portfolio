@@ -29,11 +29,8 @@ export function MobileMenu() {
           <NavItem uri="/" text="Home" />
           <NavItem uri="#projects" text="Projetos" />
           <NavItem uri="#about" text="Sobre" />
-          <NavItem
-            uri="/assets/michael-matheus-cv.pdf"
-            text="Currículo"
-            target="_blank"
-          />
+          <NavItem uri="#" text="Blog" />
+          <NavItem uri="#contact" text="Contato" />
         </nav>
         <Dialog.Close />
       </Dialog.Content>

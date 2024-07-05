@@ -4,10 +4,6 @@ import Image from 'next/image'
 
 import { gql, useQuery } from '@apollo/client'
 
-import Flicking from '@egjs/react-flicking'
-
-import '@egjs/react-flicking/dist/flicking.css'
-
 import './styles.css'
 
 interface Skill {
@@ -34,12 +30,7 @@ export function SkillsList() {
   const { data } = useQuery<{ skills: Skill[] }>(GET_SKILLS_QUERY)
 
   return (
-    <Flicking
-      className="mt-14 flex"
-      hideBeforeInit={true}
-      align="prev"
-      autoResize={true}
-    >
+    <section className="mt-14 flex">
       {data?.skills.map((skill) => (
         <div
           key={skill.id}
@@ -55,6 +46,6 @@ export function SkillsList() {
           <span className="text-md text-gray-100">{skill.title}</span>
         </div>
       ))}
-    </Flicking>
+    </section>
   )
 }

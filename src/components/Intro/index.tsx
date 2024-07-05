@@ -1,5 +1,4 @@
-import { CallToAction } from './components/call-to-action'
-import { IntroFooter } from './components/intro-footer'
+import { CallToAction } from '@/components/intro/components/call-to-action'
 
 export function Intro() {
   return (
@@ -20,7 +19,6 @@ export function Intro() {
         </header>
         <CallToAction />
       </div>
-      <IntroFooter />
     </section>
   )
 }

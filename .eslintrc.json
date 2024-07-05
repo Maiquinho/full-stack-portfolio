@@ -9,48 +9,6 @@
       "error",
       { "ignoreCase": true, "ignoreDeclarationSort": true }
     ],
-    "camelcase": ["error", {"allow": ["JetBrains_Mono"]}],
-    "import/order": [
-      "error",
-      {
-        "groups": [["external", "builtin"], "internal", ["sibling"]],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          },
-          {
-            "pattern": "@apollo/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/lib/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/components/**",
-            "group": "internal"
-          },
-          {
-            "pattern": "@phosphor-icons/**",
-            "group": "internal"
-          },
-          {
-            "pattern": "@egjs/**",
-            "group": "internal",
-            "position": "after"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["internal", "react"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
-      }
-    ]
+    "camelcase": ["error", {"allow": ["JetBrains_Mono"]}]
   }
 }

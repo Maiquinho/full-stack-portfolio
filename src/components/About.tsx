@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { Button } from './button'
+import { Button } from '@/components/button'
 
 export function About() {
   useEffect(() => {

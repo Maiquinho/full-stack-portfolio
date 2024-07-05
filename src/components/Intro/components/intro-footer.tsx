@@ -64,7 +64,7 @@ export function IntroFooter() {
           />
         </Link> */}
         <Link
-          href="mailto:contato@michaelmatheus.dev"
+          href="mailto:michaelmatheus2001@gmail.com"
           title="E-mail"
           target="_blank"
         >

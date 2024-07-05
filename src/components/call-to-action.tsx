@@ -7,10 +7,10 @@ import Link from 'next/link'
 
 import 'aos/dist/aos.css'
 
-import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
+import { Button } from '@/components/button'
 import { Envelope, WhatsappLogo } from '@phosphor-icons/react'
 
-import { Button } from './button'
+import { MY_PHONE, whatsappCustomMessage } from '@/utils/whatsapp'
 
 export function CallToAction() {
   useEffect(() => {
@@ -51,7 +51,7 @@ export function CallToAction() {
             icon={WhatsappLogo}
           />
         </Link>
-        <Link href="mailto:contato@michaelmatheus.dev" target="_blank">
+        <Link href="mailto:michaelmatheus2001@gmail.com" target="_blank">
           <Button
             text="Enviar E-mail"
             variant="outline"
