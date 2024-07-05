@@ -1,4 +1,4 @@
-import { CallToAction } from './components/call-to-action'
+import { CallToAction } from '@/components/intro/components/call-to-action'
 
 export function Intro() {
   return (

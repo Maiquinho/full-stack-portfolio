@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 
-import { Navigation } from './components/navigation'
-import { MobileNav } from './components/navigation/components/mobile-nav'
+import { Navigation } from '@/components/header/components/navigation/'
+import { MobileNav } from '@/components/header/components/navigation/components/mobile-nav/'
 
 import { Logo } from '../logo'
 

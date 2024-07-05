@@ -6,7 +6,7 @@ import Carousel from 'react-multi-carousel'
 
 import { gql, useQuery } from '@apollo/client'
 
-import { Project } from './components/project'
+import { Project } from '@/components/projects/components/project'
 
 const responsive = {
   superLargeDesktop: {
